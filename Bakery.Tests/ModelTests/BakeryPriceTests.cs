@@ -1,8 +1,19 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BakerPrice.Models;
+using BakeryPrice.Models;
 
 namespace BakeryPrice.Tests
 {
+
   [TestClass]
+  public class BreadTests
+  {
+
+    [TestMethod]
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+  }
   
 }
