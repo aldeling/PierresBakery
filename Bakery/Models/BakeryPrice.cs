@@ -22,6 +22,9 @@ namespace BakeryPrice.Models
 
   public class Pastry
   {
-
+    public int DiscountedPastry(int amount)
+    {
+    
+    }
   }
 }

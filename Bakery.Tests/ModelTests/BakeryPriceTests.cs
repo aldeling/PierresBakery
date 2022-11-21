@@ -47,5 +47,12 @@ namespace BakeryPrice.Tests
       Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+
+    [TestMethod]
+    public void DiscountedPastry_QuantityDividedByThree_Extra()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(1, newPastry.DiscountedPastry(3));
+    }
   }
 }
