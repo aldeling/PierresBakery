@@ -26,5 +26,10 @@ namespace BakeryPrice.Models
     {
       return amount / 3;
     }
+
+    public int TotalPastry(int amount)
+    {
+      
+    }
   }
 }
