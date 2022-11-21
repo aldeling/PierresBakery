@@ -16,10 +16,10 @@ namespace BakeryPrice.Tests
     }
 
     [TestMethod]
-    public void BreadPrice_DividesQuantityByThree_Remaining()
+    public void DiscountedBread_DividesQuantityByThree_Remaining()
     {
       Bread newBread = new Bread();
-      Assert.AreEqual(1, newBread.BreadPrice(3));
+      Assert.AreEqual(1, newBread.DiscountedBread(3));
     }
 
     [TestMethod]
