@@ -9,7 +9,8 @@ namespace BakeryPrice.Models
 
     public int PricedBread(int amount)
     {
-
+      int extraLoafs = DiscountedBread(amount);
+      return amount - extraLoafs;
     }
 
     public int InitialBreadPrice(int amount)
