@@ -13,9 +13,10 @@ namespace BakeryPrice.Models
       return amount - extraLoafs;
     }
 
-    public int InitialBreadPrice(int amount)
+    public int TotalBreadPrice(int amount)
     {
-      return amount * 5;
+      int payableLoafs = PricedBread(amount);
+      return payableLoafs * 5;
     }
   }
 

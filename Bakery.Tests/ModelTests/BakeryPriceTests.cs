@@ -23,10 +23,10 @@ namespace BakeryPrice.Tests
     }
 
     [TestMethod]
-    public void InitialBreadPrice_BreadTimesFive_Total()
+    public void TotalBreadPrice_PricedBreadTimesFive_Total()
     {
       Bread newBread = new Bread();
-      Assert.AreEqual(10, newBread.InitialBreadPrice(2));
+      Assert.AreEqual(10, newBread.TotalBreadPrice(2));
     }
 
     [TestMethod]
