@@ -20,6 +20,8 @@ namespace BakeryPage
       string breadAmount = Console.ReadLine();
       Console.WriteLine("Amount of Pastries: ");
       string pastryAmount = Console.ReadLine();
+
+      int breadNumber = int.Parse(breadAmount);
     }
   }
 }

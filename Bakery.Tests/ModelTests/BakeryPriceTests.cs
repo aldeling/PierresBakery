@@ -14,6 +14,13 @@ namespace BakeryPrice.Tests
       Bread newBread = new Bread();
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
+
+    [TestMethod]
+    public void BreadPrice_DividesQuantityByThree_Remaining()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(1, newBread.BreadPrice(3));
+    }
   }
   
   [TestClass]
