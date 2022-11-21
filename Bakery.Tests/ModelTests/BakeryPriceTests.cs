@@ -21,6 +21,13 @@ namespace BakeryPrice.Tests
       Bread newBread = new Bread();
       Assert.AreEqual(1, newBread.BreadPrice(3));
     }
+
+    [TestMethod]
+    public void InitialBreadPrice_BreadTimesFive_Total()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(10, newBread.InitialBreadPrice(2));
+    }
   }
   
   [TestClass]
