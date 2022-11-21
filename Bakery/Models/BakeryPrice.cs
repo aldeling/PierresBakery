@@ -7,6 +7,11 @@ namespace BakeryPrice.Models
       return amount / 3;
     }
 
+    public int PricedBread(int amount)
+    {
+
+    }
+
     public int InitialBreadPrice(int amount)
     {
       return amount * 5;

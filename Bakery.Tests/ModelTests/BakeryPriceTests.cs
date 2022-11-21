@@ -28,6 +28,13 @@ namespace BakeryPrice.Tests
       Bread newBread = new Bread();
       Assert.AreEqual(10, newBread.InitialBreadPrice(2));
     }
+
+    [TestMethod]
+    public void PricedBread_DiscountedBreadMinusAmount_QuantityCharged()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(2, newBread.PricedBread(3));
+    }
   }
   
   [TestClass]
