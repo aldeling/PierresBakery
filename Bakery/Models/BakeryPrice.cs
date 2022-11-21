@@ -32,5 +32,10 @@ namespace BakeryPrice.Models
       int extraPastries = DiscountedPastry(amount);
       return amount - extraPastries;
     }
+
+    public int FullPriced(int amount)
+    {
+      
+    }
   }
 }

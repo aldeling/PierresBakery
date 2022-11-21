@@ -61,5 +61,12 @@ namespace BakeryPrice.Tests
       Pastry newPastry = new Pastry();
       Assert.AreEqual(3, newPastry.TotalPastry(4));
     }
+
+    [TestMethod]
+    public void FullPriced_TwoTimesTotalPastry_FullPrice()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(4, newPastry.FullPriced(2));
+    }
   }
 }
