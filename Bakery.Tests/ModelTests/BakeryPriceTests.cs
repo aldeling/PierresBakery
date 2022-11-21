@@ -59,7 +59,7 @@ namespace BakeryPrice.Tests
     public void TotalPastry_DiscountedMinusTotal_FullPrice()
     {
       Pastry newPastry = new Pastry();
-      Asser.AreEqual(3, newPastry.TotalPastry(4));
+      Assert.AreEqual(3, newPastry.TotalPastry(4));
     }
   }
 }
