@@ -4,6 +4,7 @@ namespace BakeryPrice.Models
   {
     public int BreadPrice(int amount)
     {
+      return amount / 3;
     }
   }
 
