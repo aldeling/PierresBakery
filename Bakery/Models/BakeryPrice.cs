@@ -24,7 +24,7 @@ namespace BakeryPrice.Models
   {
     public int DiscountedPastry(int amount)
     {
-    
+      return amount / 3;
     }
   }
 }
