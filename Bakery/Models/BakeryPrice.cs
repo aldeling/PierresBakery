@@ -47,7 +47,9 @@ namespace BakeryPrice.Models
 
     public int TotalPrice(int amount)
     {
-
+      int fullPrice = FullPriced(amount);
+      int discountedPrice = DiscountedPrice(amount);
+      return fullPrice + discountedPrice;
     }
   }
 }
