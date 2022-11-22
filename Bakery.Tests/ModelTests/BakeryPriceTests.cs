@@ -68,5 +68,12 @@ namespace BakeryPrice.Tests
       Pastry newPastry = new Pastry();
       Assert.AreEqual(4, newPastry.FullPriced(2));
     }
+
+    [TestMethod]
+    public void DiscountedPrice_ExtraPastriesTimesOne_SalePrice()
+    {
+      PAstry newPastry = new Pastry();
+      Assert.AreEqual(2, newPastry.DiscountedPrice(6));
+    }
   }
 }

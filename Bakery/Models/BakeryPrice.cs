@@ -38,5 +38,10 @@ namespace BakeryPrice.Models
       int totalPastry = TotalPastry(amount);
       return totalPastry * 2;
     }
+
+    public int DiscountedPrice(int amount)
+    {
+      
+    }
   }
 }
