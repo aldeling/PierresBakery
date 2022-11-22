@@ -22,6 +22,14 @@ namespace BakeryPage
       string pastryAmount = Console.ReadLine();
 
       int breadNumber = int.Parse(breadAmount);
+      int pastryNumber = int.Parse(pastryAmount);
+
+      Bread newBread = new Bread();
+      Pastry newPastry = new Pastry();
+      int breadTotal = newBread.TotalBreadPrice(breadNumber);
+      int pastryTotal = newPastry.TotalPrice(pastryNumber);
+      int finalTotal = breadTotal + pastryTotal;
+      Console.WriteLine($"Your total price today is ${finalTotal}");
     }
   }
 }

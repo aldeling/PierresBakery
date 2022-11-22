@@ -1,3 +1,5 @@
+using BakeryPage;
+
 namespace BakeryPrice.Models
 {
   public class Bread
