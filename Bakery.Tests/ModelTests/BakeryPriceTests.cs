@@ -72,7 +72,7 @@ namespace BakeryPrice.Tests
     [TestMethod]
     public void DiscountedPrice_ExtraPastriesTimesOne_SalePrice()
     {
-      PAstry newPastry = new Pastry();
+      Pastry newPastry = new Pastry();
       Assert.AreEqual(2, newPastry.DiscountedPrice(6));
     }
   }
