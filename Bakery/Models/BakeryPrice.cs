@@ -31,6 +31,13 @@ namespace BakeryPrice.Models
 
   public class Pastry
   {
+    public int PricePerPastry { get; set;}
+
+    public Pastry()
+    {
+      PricePerPastry = 2;
+    }
+
     public int DiscountedPastry(int amount)
     {
       return amount / 3;
@@ -45,7 +52,7 @@ namespace BakeryPrice.Models
     public int FullPriced(int amount)
     {
       int totalPastry = TotalPastry(amount);
-      return totalPastry * 2;
+      return totalPastry * PricePerPastry;
     }
 
     public int DiscountedPrice(int amount)
