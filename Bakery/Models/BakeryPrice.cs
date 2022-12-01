@@ -4,6 +4,13 @@ namespace BakeryPrice.Models
 {
   public class Bread
   {
+    public int PricePerBread { get; set; }
+
+    public Bread()
+    {
+      PricePerBread = 5;
+    }
+
     public int DiscountedBread(int amount)
     {
       return amount / 3;
@@ -18,7 +25,7 @@ namespace BakeryPrice.Models
     public int TotalBreadPrice(int amount)
     {
       int payableLoafs = PricedBread(amount);
-      return payableLoafs * 5;
+      return payableLoafs * PricePerBread;
     }
   }
 
